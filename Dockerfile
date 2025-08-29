@@ -26,6 +26,7 @@ ENV WORLD_NAME=HoneyWorld
 ENV AUTOCREATE=2
 ENV SEED=
 
+
 VOLUME ["/data"]
 
 COPY --chown=tshock:tshock entrypoint.sh /tshock/entrypoint.sh
