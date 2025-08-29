@@ -18,7 +18,6 @@ RUN curl -L "https://github.com/Pryaxis/TShock/releases/download/v${TSHOCK_VERSI
 RUN useradd -m -d /data -s /usr/sbin/nologin tshock \
  && mkdir -p /data/worlds /data/config /data/logs /data/plugins \
  && chown -R tshock:tshock /data /tshock
-USER tshock
 
 ENV PORT=7777
 ENV MAX_PLAYERS=8
