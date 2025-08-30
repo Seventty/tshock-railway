@@ -26,7 +26,7 @@ ENV AUTOCREATE=2
 ENV SEED=
 
 COPY --chown=tshock:tshock entrypoint.sh /tshock/entrypoint.sh
-COPY worlds/HoneyWorld.wld /tshock/worlds/HoneyWorld.wld
+COPY data/worlds/HoneyWorld.wld /tshock/worlds/HoneyWorld.wld
 RUN chmod +x /tshock/entrypoint.sh
 
 EXPOSE 7777
